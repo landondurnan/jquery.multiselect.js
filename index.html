@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example for jquery.multiselect</title>
+    <link href="css/multiselect.css" rel="stylesheet">
+  </head>
+  <body>
+    <form id="example" action="action" method="post">
+      <label>Choose Food</label>
+      <select multiple="multiple" id="food" name="food[]">
+        <optgroup label="Fruits">
+          <option value="banana">Banana</option>
+          <option value="apple">Apple</option>
+          <option value="orange">Orange</option>
+          <option value="kiwi">Kiwi</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+          <option value="carrot">Carrot</option>
+          <option value="lettuce">Lettuce</option>
+          <option value="kale">Kale</option>
+          <option value="potato">Potato</option>
+          <option value="tomato">Tomato</option>
+        </optgroup>
+        <optgroup label="Grains">
+          <option value="wheat">Wheat</option>
+          <option value="rice">Rice</option>
+          <option value="barley">Barley</option>
+          <option value="quinoa">Quinoa</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/jquery.multiselect.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("select#food").multiselect();
+    });
+  </script>
+</html>
