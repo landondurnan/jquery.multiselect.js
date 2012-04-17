@@ -1,4 +1,5 @@
 (function($){
+  "use strict";
   $.fn.multiselect = function(options){
     var settings = {
       'selectedHeader' : 'Selected Items',
@@ -101,9 +102,8 @@
             .find('li.toggle')
             .show(); 
         }
-	      /* Trigger the change event on the form element itself,
-	      for the benefit of DOM listeners */
-	      $multi.trigger('change', [$multi.val()]);
+	// Trigger the change event on the form element itself, for the benefit of DOM listeners
+	$multi.trigger('change', [$multi.val()]);
       }
 
       // Update viewable selected items
